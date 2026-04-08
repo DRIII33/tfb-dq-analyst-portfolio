@@ -1,0 +1,13 @@
+Field Name,Data Type,Description,Source System,TDI Section
+RECORD_ID,STRING,Unique identifier for the adverse action event.,Majesco,Internal
+POLICY_NUMBER,STRING,The unique identifier for the policy.,Majesco,Section E
+NOTIFICATION_DATE,DATE,Date the notice was sent to the policyholder (NDT).,Majesco,Section E
+ACTION_TYPE,STRING,"C=Cancellation, NR=Non-renewal, D=Declination.",Underwriting,Section E
+POLICY_TYPE,STRING,"H=Homeowners, D=Dwelling, T=Tenants, C=Condo.",Majesco,Section E
+REASON_SOURCE,STRING,"C=Carrier, A=Agent, B=Both.",Underwriting,Section E
+INDICATOR_60D,BOOLEAN,Sent >= 60 days before effective date?,System Calc,Section E
+ZIP_CODE,STRING,5-digit ZIP code of the risk.,CRM,Section E/G
+EFFECTIVE_DATE,DATE,Date the action takes effect.,Majesco,Section E/G
+REASON_CODES,STRING,Alphabetical concatenated string of codes A-L.,Underwriting,Section E
+THIRD_PARTY_IND,STRING,"Y=Third-party data used, N=No third-party data.",Underwriting,Section E
+AERIAL_IMAGERY,BOOLEAN,Was aerial imagery used for the decision?,Satellite API,Section E
